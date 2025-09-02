@@ -1,0 +1,106 @@
+/* Reset default margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #1e1e1e;
+}
+
+/* Calculator container */
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 420px;
+  height: 90vh;
+  padding: 15px;
+  border-radius: 20px;
+  background: #2b2b2b;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Display box */
+#inputBox {
+  width: 100%;
+  height: 80px;
+  font-size: 2rem;
+  text-align: right;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #1a1a1a;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Button grid */
+.calculator div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+button {
+  padding: 18px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 12px;
+  background: #3d3d3d;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Hover / Active effects */
+button:hover {
+  background: #505050;
+}
+button:active {
+  transform: scale(0.95);
+}
+
+/* Operator buttons */
+button:nth-child(4n),
+button:nth-child(3) {
+  background: #ff9500;
+  color: #fff;
+}
+button:nth-child(4n):hover,
+button:nth-child(3):hover {
+  background: #ffac33;
+}
+
+/* Special buttons */
+button:nth-child(1) { /* AC */
+  background: #d9534f;
+}
+button:nth-child(1):hover {
+  background: #e77471;
+}
+
+button:nth-child(2) { /* DEL */
+  background: #f0ad4e;
+}
+button:nth-child(2):hover {
+  background: #f7c86a;
+}
+
+/* Equals button (=) */
+button:last-child {
+  grid-column: span 1;
+  background: #28a745;
+}
+button:last-child:hover {
+  background: #45c363;
+}

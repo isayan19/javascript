@@ -1,0 +1,72 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f6fa;
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+}
+
+/* Container */
+#mainMenu {
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Heading on top */
+#mainMenu h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+/* Grid Layout for Modules */
+#mainMenu .modules {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Each Module Card */
+.module {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.module:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* Module Image */
+.module img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* Module Title */
+.module h3 {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+a{
+  text-decoration: none;
+}

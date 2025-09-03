@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     <link rel="icon" type="image/png" href="tic-tac-toe.png">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="scoreboard">
+            <div class="player">
+                <h3>X</h3>
+                <p>Wins: <span id="xWins">0</span></p>
+            </div>
+            <div class="draws">
+                <h3>Draws</h3>
+                <p><span id="draws">0</span></p>
+            </div>
+            <div class="player">
+                <h3>O</h3>
+                <p>Wins: <span id="oWins">0</span></p>
+            </div>
+        </div>
+        <h2 id="turnIndicator">Turn: X</h2>
+        <div class="board">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+        <button id="restart">Restart</button>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2 id="winnermsg"></h2>
+            <button id="newGame">New Game</button>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
